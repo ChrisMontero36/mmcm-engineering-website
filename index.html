@@ -30,7 +30,7 @@
 
         /* Navigation */
         .navbar {
-            background: rgba(0, 51, 102, 0.95);
+            background: rgba(64, 64, 64, 0.95);
             backdrop-filter: blur(10px);
             position: fixed;
             top: 0;
@@ -73,7 +73,7 @@
         }
 
         .nav-menu a:hover {
-            color: #66ccff;
+            color: #ff7f00;
             background: rgba(255, 255, 255, 0.1);
         }
 
@@ -88,7 +88,7 @@
 
         /* Header with Hero Image */
         .hero {
-            background: linear-gradient(135deg, #003366 0%, #0066cc 50%, #003366 100%);
+            background: linear-gradient(135deg, #404040 0%, #ff7f00 50%, #404040 100%);
             color: white;
             text-align: center;
             padding: 150px 0 100px;
@@ -109,8 +109,9 @@
             background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
-            opacity: 0.3;
+            opacity: 0.2;
             z-index: -1;
+            filter: grayscale(70%) contrast(1.2);
         }
 
         .hero h1 {
@@ -129,17 +130,18 @@
 
         .cta-button {
             display: inline-block;
-            background: #66ccff;
-            color: #003366;
+            background: linear-gradient(135deg, #ff7f00 0%, #e56c00 100%);
+            color: white;
             padding: 15px 30px;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
             transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 127, 0, 0.3);
         }
 
         .cta-button:hover {
-            background: #4db8ff;
+            background: linear-gradient(135deg, #e56c00 0%, #cc5c00 100%);
             transform: translateY(-2px);
         }
 
@@ -153,7 +155,7 @@
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 50px;
-            color: #003366;
+            color: #404040;
         }
 
         .services-grid {
@@ -164,12 +166,13 @@
         }
 
         .service-card {
-            background: #f8f9fa;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
             padding: 30px;
             border-radius: 10px;
             text-align: center;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
+            border-left: 4px solid #ff7f00;
         }
 
         .service-card:hover {
@@ -181,18 +184,19 @@
             height: 80px;
             margin: 0 auto 20px;
             border-radius: 50%;
-            background-color: #003366;
+            background: linear-gradient(135deg, #ff7f00 0%, #e56c00 100%);
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 2rem;
             color: white;
+            box-shadow: 0 4px 15px rgba(255, 127, 0, 0.3);
         }
 
         .service-card h3 {
             font-size: 1.5rem;
             margin-bottom: 15px;
-            color: #003366;
+            color: #404040;
         }
 
         .service-card p {
@@ -203,7 +207,7 @@
         /* About Section */
         .about {
             padding: 80px 0;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
         }
 
         .about-content {
@@ -216,7 +220,7 @@
         .about-text h2 {
             font-size: 2.5rem;
             margin-bottom: 30px;
-            color: #003366;
+            color: #404040;
         }
 
         .about-text p {
@@ -238,7 +242,7 @@
         /* Contact Section */
         .contact {
             padding: 80px 0;
-            background: #003366;
+            background: linear-gradient(135deg, #404040 0%, #606060 100%);
             color: white;
         }
 
@@ -256,7 +260,7 @@
         .contact-info h3 {
             font-size: 1.5rem;
             margin-bottom: 20px;
-            color: #66ccff;
+            color: #ff7f00;
         }
 
         .contact-info p {
@@ -279,7 +283,7 @@
         }
 
         .contact-form h3 {
-            color: #003366;
+            color: #404040;
             margin-bottom: 30px;
             font-size: 1.5rem;
         }
@@ -308,7 +312,7 @@
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #66ccff;
+            border-color: #ff7f00;
         }
 
         .form-group textarea {
@@ -317,7 +321,7 @@
         }
 
         .submit-btn {
-            background: #003366;
+            background: linear-gradient(135deg, #ff7f00 0%, #e56c00 100%);
             color: white;
             padding: 15px 30px;
             border: none;
@@ -325,12 +329,14 @@
             font-size: 1rem;
             font-weight: bold;
             cursor: pointer;
-            transition: background 0.3s ease;
+            transition: all 0.3s ease;
             width: 100%;
+            box-shadow: 0 4px 15px rgba(255, 127, 0, 0.3);
         }
 
         .submit-btn:hover {
-            background: #0066cc;
+            background: linear-gradient(135deg, #e56c00 0%, #cc5c00 100%);
+            transform: translateY(-2px);
         }
 
         /* Footer */
@@ -346,7 +352,7 @@
         }
 
         .footer a {
-            color: #66ccff;
+            color: #ff7f00;
             text-decoration: none;
         }
 
@@ -496,12 +502,12 @@
             <div class="about-content">
                 <div class="about-text">
                     <h2>About MMCM Engineering</h2>
-                    <p>With over a decade of experience in the engineering and construction industry, MMCM Engineering Services has established itself as a trusted partner for clients seeking exceptional project management and design solutions.</p>
+                    <p>With over 3 decades of experience in the engineering and construction industry, MMCM Engineering Services has established itself as a trusted partner for clients seeking exceptional project management and design solutions.</p>
                     <p>Our team of certified engineers and project managers brings a wealth of expertise to every project, ensuring that we deliver innovative, cost-effective, and sustainable solutions that exceed our clients' expectations.</p>
                     <p>We pride ourselves on our commitment to quality, safety, and customer satisfaction, making us the preferred choice for construction project management in the region.</p>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Engineering team at work">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Engineering team at work" style="filter: sepia(20%) saturate(0.😎 contrast(1.1) brightness(1.1);">
                 </div>
             </div>
         </div>
@@ -594,9 +600,9 @@
         window.addEventListener('scroll', () => {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 100) {
-                navbar.style.background = 'rgba(0, 51, 102, 0.98)';
+                navbar.style.background = 'rgba(64, 64, 64, 0.98)';
             } else {
-                navbar.style.background = 'rgba(0, 51, 102, 0.95)';
+                navbar.style.background = 'rgba(64, 64, 64, 0.95)';
             }
         });
     </script>
