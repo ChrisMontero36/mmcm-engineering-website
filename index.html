@@ -204,28 +204,18 @@
             line-height: 1.6;
         }
 
-        /* Engineering Trades Section */
-        .engineering-trades {
-            margin-top: 60px;
-            padding-top: 60px;
-            border-top: 2px solid #f0f0f0;
+        /* Specialties Section */
+        .specialties {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         }
 
-        .trades-title {
+        .specialties-intro {
             text-align: center;
-            font-size: 2.2rem;
-            margin-bottom: 20px;
-            color: #404040;
-        }
-
-        .trades-subtitle {
-            text-align: center;
-            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 50px;
             color: #666;
-            margin-bottom: 50px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            font-size: 1.1rem;
         }
 
         .trades-grid {
@@ -445,7 +435,7 @@
                 top: 100%;
                 left: 0;
                 right: 0;
-                background: rgba(0, 51, 102, 0.98);
+                background: rgba(64, 64, 64, 0.98);
                 flex-direction: column;
                 padding: 20px;
                 gap: 0;
@@ -470,10 +460,6 @@
             .trades-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
-            }
-            
-            .trades-title {
-                font-size: 1.8rem;
             }
             
             .trade-item {
@@ -508,6 +494,7 @@
             }
 
             .services,
+            .specialties,
             .about,
             .contact {
                 padding: 60px 0;
@@ -527,6 +514,7 @@
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#specialties">Specialties</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -579,48 +567,66 @@
                     <p>Rigorous quality assurance and control processes to ensure all work meets or exceeds industry standards and client expectations.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Engineering Trades Section -->
-            <div class="engineering-trades">
-                <h3 class="trades-title">Our Engineering Specialties</h3>
-                <p class="trades-subtitle">We provide comprehensive engineering design services across all major trades:</p>
+    <!-- Specialties Section -->
+    <section class="specialties" id="specialties">
+        <div class="container">
+            <h2 class="section-title">Our Engineering Specialties</h2>
+            <p class="specialties-intro">
+                MMCM Engineering Services offers comprehensive engineering design and consulting across all major disciplines. 
+                Our team of licensed professionals brings decades of experience to deliver innovative, efficient, and code-compliant solutions 
+                for projects of all sizes and complexities.
+            </p>
+            
+            <div class="trades-grid">
+                <div class="trade-item">
+                    <div class="trade-icon">🏗️</div>
+                    <h4>Structural Engineering</h4>
+                    <p>Advanced structural design and analysis ensuring safety, durability, and compliance with building codes for residential, commercial, and industrial structures.</p>
+                </div>
                 
-                <div class="trades-grid">
-                    <div class="trade-item">
-                        <div class="trade-icon">🏗️</div>
-                        <h4>Structural Engineering</h4>
-                        <p>Advanced structural design and analysis ensuring safety, durability, and compliance with building codes.</p>
-                    </div>
-                    
-                    <div class="trade-item">
-                        <div class="trade-icon">🏛️</div>
-                        <h4>Architectural Design</h4>
-                        <p>Creative architectural solutions blending functionality with aesthetic appeal for inspiring spaces.</p>
-                    </div>
-                    
-                    <div class="trade-item">
-                        <div class="trade-icon">🔧</div>
-                        <h4>Mechanical Engineering</h4>
-                        <p>Complete HVAC, ventilation, and mechanical system design for optimal performance and efficiency.</p>
-                    </div>
-                    
-                    <div class="trade-item">
-                        <div class="trade-icon">⚡</div>
-                        <h4>Electrical Engineering</h4>
-                        <p>Comprehensive electrical system design including power distribution, lighting, and control systems.</p>
-                    </div>
-                    
-                    <div class="trade-item">
-                        <div class="trade-icon">🚰</div>
-                        <h4>Plumbing Engineering</h4>
-                        <p>Complete water management systems including supply, drainage, and waste management solutions.</p>
-                    </div>
-                    
-                    <div class="trade-item">
-                        <div class="trade-icon">🔥</div>
-                        <h4>Fire Protection Engineering</h4>
-                        <p>Comprehensive fire safety systems including detection, suppression, and emergency response planning.</p>
-                    </div>
+                <div class="trade-item">
+                    <div class="trade-icon">🏛️</div>
+                    <h4>Architectural Design</h4>
+                    <p>Creative architectural solutions blending functionality with aesthetic appeal, creating inspiring spaces that meet client needs and regulatory requirements.</p>
+                </div>
+                
+                <div class="trade-item">
+                    <div class="trade-icon">🔧</div>
+                    <h4>Mechanical Engineering</h4>
+                    <p>Complete HVAC, ventilation, and mechanical system design for optimal performance, energy efficiency, and indoor air quality management.</p>
+                </div>
+                
+                <div class="trade-item">
+                    <div class="trade-icon">⚡</div>
+                    <h4>Electrical Engineering</h4>
+                    <p>Comprehensive electrical system design including power distribution, lighting design, control systems, and renewable energy integration.</p>
+                </div>
+                
+                <div class="trade-item">
+                    <div class="trade-icon">🚰</div>
+                    <h4>Plumbing Engineering</h4>
+                    <p>Complete water management systems including potable water supply, drainage, waste management, and storm water management solutions.</p>
+                </div>
+                
+                <div class="trade-item">
+                    <div class="trade-icon">🔥</div>
+                    <h4>Fire Protection Engineering</h4>
+                    <p>Comprehensive fire safety systems including detection, suppression, emergency response planning, and life safety code compliance.</p>
+                </div>
+
+                <div class="trade-item">
+                    <div class="trade-icon">🌿</div>
+                    <h4>Environmental Engineering</h4>
+                    <p>Sustainable design solutions, environmental impact assessments, and green building certification support for eco-friendly construction.</p>
+                </div>
+                
+                <div class="trade-item">
+                    <div class="trade-icon">🛣️</div>
+                    <h4>Civil Engineering</h4>
+                    <p>Site development, roadway design, utilities planning, and infrastructure projects with focus on functionality and environmental stewardship.</p>
                 </div>
             </div>
         </div>
