@@ -516,7 +516,11 @@
                     <p>Contact us today to discuss your engineering and project management needs. Our team of professionals is ready to provide you with innovative design solutions and expert project management services.</p>
                     
                     <!-- Contact Form -->
-                    <form class="contact-form" action="mailto:info1.mcmm@gmail.com" method="post" enctype="text/plain">
+                    <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <p style="display: none;">
+                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Your Name" required>
                         </div>
